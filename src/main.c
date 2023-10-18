@@ -5,11 +5,15 @@
 *       A Zephyr application using SmartMesh IP for networking and
 *       Memfault for monitoring.
 *
+* LICENSE:
+*       Parts are copied from:
+*       - aiot_play_fw - INRIA
+*       - Memfault Packetizer - Memfault Inc.
 *
 * NOTES :
 *       This application is part of the OpenSwarm Project.
 *
-*       Copyright Siemens AG and Inria.  All rights reserved.
+*       Copyright Siemens AG.  All rights reserved.
 *
 * AUTHOR :    Fabian Graf       START DATE :    26 Sep 2023
 *

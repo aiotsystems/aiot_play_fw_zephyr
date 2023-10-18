@@ -1,13 +1,32 @@
+/*H**********************************************************************
+* FILENAME :        ntw.c
+*
+* DESCRIPTION :
+*       Networking API of the AIOT Play
+*
+* LICENSE:
+*       Parts are copied from:
+*       - aiot_play_fw - INRIA
+*
+* NOTES :
+*       This application is part of the OpenSwarm Project.
+*
+*       Copyright Siemens AG and Inria  - All rights reserved.
+*
+* AUTHOR :    Fabian Graf       START DATE :    26 Sep 2023
+*
+* CHANGES :
+*
+* VERSION DATE    WHO     DETAIL
+* 0       26Sep23 FG      Initial Commit
+*
+*H*/
+
 #include <zephyr/kernel.h>
 #include <stdint.h>
 #include <nrf52833.h>
 #include "sm_clib-REL-1.0.2.9/sm_clib/dn_ipmt.h"
 #include "ntw.h"
-
-//=========================== zephyr =========================================
-
-
-
 
 //=========================== defines =========================================
 
@@ -140,31 +159,9 @@ void fsm_scheduleEvent(uint16_t delay, fsm_timer_callback cb) {
     ntw_vars.fsmCb                     = cb;
     k_timer_start(&my_timer, K_MSEC(125), K_MSEC(125));
     
-    //RTC1_IRQHandler();
-
-   /*
-    // configure/start the RTC1
-    // 1098 7654 3210 9876 5432 1098 7654 3210
-    // xxxx xxxx xxxx FEDC xxxx xxxx xxxx xxBA (C=compare 0)
-    // 0000 0000 0000 0001 0000 0000 0000 0000 
-    //    0    0    0    1    0    0    0    0 0x00010000
-    NRF_RTC1->EVTENSET                 = 0x00010000;       // enable compare 0 event routing
-    NRF_RTC1->INTENSET                 = 0x00010000;       // enable compare 0 interrupts
-
-    // enable interrupts
-    NVIC_SetPriority(RTC1_IRQn, 1);
-    NVIC_ClearPendingIRQ(RTC1_IRQn);
-    NVIC_EnableIRQ(RTC1_IRQn);
-    
-    //
-    NRF_RTC1->CC[0]                    = delay;            // 32768>>3 = 125 ms
-    NRF_RTC1->TASKS_START              = 0x00000001;       // start RTC1
-    */
 }
 
 void fsm_cancelEvent(void) {
-   // stop RTC1
-   // NRF_RTC1->TASKS_STOP                = 0x00000001;       // stop RTC1
    k_timer_stop(&my_timer);
    
    // clear function to call
@@ -457,20 +454,4 @@ void RTC1_IRQHandler(void) {
     // debug
     ntw_dbg.num_ISR_RTC1_IRQHandler++;
     ntw_vars.fsmCb();
-    /*
-    // handle compare[0]
-    if (NRF_RTC1->EVENTS_COMPARE[0] == 0x00000001 ) {
-
-        // clear flag
-        NRF_RTC1->EVENTS_COMPARE[0]    = 0x00000000;
-
-        // clear COUNTER
-        NRF_RTC1->TASKS_CLEAR          = 0x00000001;
-
-        // debug
-        ntw_dbg.num_ISR_RTC1_IRQHandler_COMPARE0++;
-
-        // handle
-        ntw_vars.fsmCb();
-    }*/
 }

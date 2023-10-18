@@ -1,7 +1,5 @@
 # AIOT Zephyr Application which uses Memfault for Performance Monitoring
 
-
-
 ## Project information
 
 In this project we present an Application Performance Monitoring (APM) framework for the AIOT Board.
@@ -231,3 +229,17 @@ This can either be done via the Memfault CLI or by hand.
 
 When the AIOT has joined the network and the JSONServer.py and smip_to_memfault_exporter.py are running on the Edge Device, then you can observe the reported values for the testMetric in the Zephyr application in the Memfault cloud.
 ![image](./docs/7-2.jpg)
+
+
+
+## License
+Some of the code parts have been copied from example sites. The sources will be stated in the files.
+
+Collected Sources:
+| Code Source   | Owner | URL |
+|----------|----------|----------|
+| aiot_play_fw    | INRIA  | https://github.com/aiotsystems/aiot_play_fw.git   |
+| sm_clib    | Dust Networks  | https://github.com/dustcloud/sm_clib   |
+| Memfault Packetizer   | Memfault   | https://docs.memfault.com/docs/mcu/data-from-firmware-to-the-cloud/  |
+
+The rest is under BSD-3 License (https://spdx.org/licenses/BSD-3-Clause-Clear.html)

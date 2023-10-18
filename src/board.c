@@ -1,3 +1,20 @@
+/*H**********************************************************************
+* FILENAME :        board.c
+*
+* DESCRIPTION :
+*       Board Configuration file for the AIOT
+*
+* NOTES :
+*       This application is part of the OpenSwarm Project.
+*
+*       Copyright Inria  - All rights reserved.
+*
+* AUTHOR :    Inria       START DATE :    26 Sep 2023
+*
+*
+*
+*H*/
+
 #include "board.h"
 
 //=========================== variables =======================================

@@ -15,9 +15,4 @@ typedef void (*periodtimer_cbt)(void);
 
 void periodictimer_init(uint16_t period_s, periodtimer_cbt periodtimer_cb);
 
-/**
-\}
-\}
-*/
-
 #endif
