@@ -53,7 +53,7 @@ nrfjprog -v
 
 Clone Repository:
 ```
-git clone git@github.com:aiotsystems/aiot_play_fw_zephyr.git
+git clone --recurse-submodules git@github.com:aiotsystems/aiot_play_fw_zephyr.git
 ```
 
 Import in NCS:
