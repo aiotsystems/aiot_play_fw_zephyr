@@ -9,7 +9,8 @@
 #
 # NOTES :
 #      This application is part of the OpenSwarm Project.
-#
+# 
+# COPYRIGHT:
 #      Copyright Siemens AG and Inria.  All rights reserved.
 #
 # AUTHOR :    Fabian Graf       START DATE :    09 Oct 2023

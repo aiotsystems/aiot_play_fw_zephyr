@@ -233,6 +233,9 @@ When the AIOT has joined the network and the JSONServer.py and smip_to_memfault_
 
 
 ## License
+
+Copyright Siemens AG.  All rights reserved.
+
 Some of the code parts have been copied from example sites. The sources will be stated in the files.
 
 Collected Sources:
