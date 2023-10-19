@@ -11,8 +11,6 @@
 *
 * AUTHOR :    Inria       START DATE :    26 Sep 2023
 *
-*
-*
 *H*/
 
 #include "board.h"
