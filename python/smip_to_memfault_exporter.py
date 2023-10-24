@@ -1,26 +1,26 @@
-# ***********************************************************************
-# FILENAME :        main.c
+#*H***********************************************************************
+# FILENAME :        smip_to_memfault_exporter.py
 #
 # DESCRIPTION :
-#      Script that listens to port 1880 where the JsonServer posts.
-#      We grab the payload of Memfault chunks and push them to the cloud
-#      by using the Memfault CLI.
+# Script that listens to port 1880 where the JsonServer posts.
+# We grab the payload of Memfault chunks and push them to the cloud
+# by using the Memfault CLI.
 #
-#
-# NOTES :
-#      This application is part of the OpenSwarm Project.
+# LICENSE AND COPYRIGHT:
+# SPDX-FileCopyrightText: (c) 2023 Siemens AG
+# SPDX-License-Identifier: BSD-3-Clause
 # 
-# COPYRIGHT:
-#      Copyright Siemens AG and Inria.  All rights reserved.
+# NOTES :
+# This application is part of the OpenSwarm Project.
 #
-# AUTHOR :    Fabian Graf       START DATE :    09 Oct 2023
+# AUTHOR :
+# Fabian Graf - fabian.graf@siemens.com
 #
 # CHANGES :
-#
 # VERSION DATE    WHO     DETAIL
 # 0       09Oct23 FG      Initial Commit
 #
-#
+#H***********************************************************************/
 
 import http.server
 import os

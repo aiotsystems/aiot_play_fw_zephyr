@@ -232,17 +232,16 @@ When the AIOT has joined the network and the JSONServer.py and smip_to_memfault_
 
 
 
-## License
+## License and Copyright
 
-Copyright Siemens AG.  All rights reserved.
+The project is under BSD-3 License (https://spdx.org/licenses/BSD-3-Clause-Clear.html).
 
-Some of the code parts have been copied from example sites. The sources will be stated in the files.
+Copyrights and Sources are stated in the Comment Header of each file.
 
-Collected Sources:
+Collection of used sources in this project:
 | Code Source   | Owner | URL |
 |----------|----------|----------|
 | aiot_play_fw    | INRIA  | https://github.com/aiotsystems/aiot_play_fw.git   |
 | sm_clib    | Dust Networks  | https://github.com/dustcloud/sm_clib   |
 | Memfault Packetizer   | Memfault   | https://docs.memfault.com/docs/mcu/data-from-firmware-to-the-cloud/  |
 
-The rest is under BSD-3 License (https://spdx.org/licenses/BSD-3-Clause-Clear.html)

@@ -1,27 +1,27 @@
-/*H**********************************************************************
+/*H***********************************************************************
 * FILENAME :        ntw.c
 *
 * DESCRIPTION :
-*       Networking API of the AIOT Play
+* Networking Interface of the AIOT Board
 *
-* LICENSE:
-*       Parts are copied from:
-*       - aiot_play_fw - INRIA
+* LICENSE AND COPYRIGHT:
+* SPDX-FileCopyrightText: (c) 2023 Siemens AG and INRIA
+* SPDX-License-Identifier: BSD-3-Clause
+* 
+* Parts are copied from:
+* - aiot_play_fw - INRIA - https://github.com/aiotsystems/aiot_play_fw.git 
 *
 * NOTES :
-*       This application is part of the OpenSwarm Project.
+* This application is part of the OpenSwarm Project.
 *
-* COPYRIGHT:
-*       Copyright Siemens AG and Inria  - All rights reserved.
-*
-* AUTHOR :    Fabian Graf       START DATE :    26 Sep 2023
+* AUTHOR :
+* Fabian Graf - fabian.graf@siemens.com
 *
 * CHANGES :
-*
 * VERSION DATE    WHO     DETAIL
 * 0       26Sep23 FG      Initial Commit
 *
-*H*/
+*H***********************************************************************/
 
 #include <zephyr/kernel.h>
 #include <stdint.h>

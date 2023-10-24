@@ -1,0 +1,6 @@
+Documentation Resources Copyrights and License
+
+For all *.jpg, *png, and *drawio files in this /docs directory holds:
+
+SPDX-FileCopyrightText: (c) 2023 Siemens AG
+SPDX-License-Identifier: BSD-3-Clause

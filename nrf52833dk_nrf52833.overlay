@@ -1,24 +1,24 @@
-// ***********************************************************************
+//*H***********************************************************************
 // FILENAME :        nrf52833dk_nrf52833.overlay
 //
 // DESCRIPTION :
-//      Devicetree Overlayfile for the AIOT Board.
+// Devicetree Overlay File for the AIOT Board.
 //
-//
-// NOTES :
-//      This application is part of the OpenSwarm Project.
+// LICENSE AND COPYRIGHT:
+// SPDX-FileCopyrightText: (c) 2023 Siemens AG
+// SPDX-License-Identifier: BSD-3-Clause
 // 
-// COPYRIGHT:
-//      Copyright Siemens AG.  All rights reserved.
+// NOTES :
+// This application is part of the OpenSwarm Project.
 //
-// AUTHOR :    Fabian Graf       START DATE :    09 Oct 2023
+// AUTHOR :
+// Fabian Graf - fabian.graf@siemens.com
 //
 // CHANGES :
-//
 // VERSION DATE    WHO     DETAIL
-// 0       09Oct23 FG      Initial Commit
+// 0       26Sep23 FG      Initial Commit
 //
-//
+//H***********************************************************************/
 
 // To get started, press Ctrl+Space to bring up the completion menu and view the available nodes.
 

@@ -1,17 +1,27 @@
-/*H**********************************************************************
+/*H***********************************************************************
 * FILENAME :        board.c
 *
 * DESCRIPTION :
-*       Board Configuration file for the AIOT
+* Board Configuration file for the AIOT
 *
+* LICENSE AND COPYRIGHT:
+* SPDX-FileCopyrightText: (c) 2022 INRIA
+* SPDX-License-Identifier: BSD-3-Clause
+*
+* This file is copied from:
+* - aiot_play_fw - INRIA - https://github.com/aiotsystems/aiot_play_fw.git 
+* 
 * NOTES :
-*       This application is part of the OpenSwarm Project.
+* This application is part of the OpenSwarm Project.
 *
-*       Copyright Inria  - All rights reserved.
+* AUTHOR :
+* Thomas Watteyne - thomas.watteyne@inria.fr
 *
-* AUTHOR :    Inria       START DATE :    26 Sep 2023
+* CHANGES :
+* VERSION DATE    WHO     DETAIL
+* 0       27Oct22 TW      Initial Commit
 *
-*H*/
+*H***********************************************************************/
 
 #include "board.h"
 

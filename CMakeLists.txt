@@ -1,22 +1,24 @@
-# ***********************************************************************
+#*H***********************************************************************
 # FILENAME :        CMakeLists.txt
 #
 # DESCRIPTION :
-#      CMakeLists file for Zephyr Project.
+# CMakeLists file for Zephyr Project.
 #
-# NOTES :
-#      This application is part of the OpenSwarm Project.
+# LICENSE AND COPYRIGHT:
+# SPDX-FileCopyrightText: (c) 2023 Siemens AG
+# SPDX-License-Identifier: BSD-3-Clause
 # 
-# COPYRIGHT:
-#      Copyright Siemens AG.  All rights reserved.
+# NOTES :
+# This application is part of the OpenSwarm Project.
 #
-# AUTHOR :    Fabian Graf       START DATE :    09 Oct 2023
+# AUTHOR :
+# Fabian Graf - fabian.graf@siemens.com
 #
 # CHANGES :
-#
 # VERSION DATE    WHO     DETAIL
-# 0       09Oct23 FG      Initial Commit
+# 0       26Sep23 FG      Initial Commit
 #
+#H***********************************************************************/
 
 cmake_minimum_required(VERSION 3.20.0)
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})

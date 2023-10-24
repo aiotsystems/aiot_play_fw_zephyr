@@ -1,29 +1,30 @@
-/*H**********************************************************************
+/*H***********************************************************************
 * FILENAME :        main.c
 *
 * DESCRIPTION :
-*       A Zephyr application using SmartMesh IP for networking and
-*       Memfault for monitoring.
+* A Zephyr application using SmartMesh IP for networking and
+* Memfault for monitoring.
 *
-* LICENSE:
-*       Parts are copied from:
-*       - aiot_play_fw - INRIA
-*       - Memfault Packetizer - Memfault Inc.
+* LICENSE AND COPYRIGHT:
+* SPDX-FileCopyrightText: (c) 2023 Siemens AG
+* SPDX-License-Identifier: BSD-3-Clause
+* 
+* Parts are copied from:
+* - aiot_play_fw - INRIA - https://github.com/aiotsystems/aiot_play_fw.git 
+* - Memfault Packetizer - Memfault Inc. - 
+*   https://docs.memfault.com/docs/mcu/data-from-firmware-to-the-cloud/
 *
 * NOTES :
-*       This application is part of the OpenSwarm Project.
+* This application is part of the OpenSwarm Project.
 *
-* COPYRIGHT:
-*       Copyright Siemens AG.  All rights reserved.
-*
-* AUTHOR :    Fabian Graf       START DATE :    26 Sep 2023
+* AUTHOR :
+* Fabian Graf - fabian.graf@siemens.com
 *
 * CHANGES :
-*
 * VERSION DATE    WHO     DETAIL
 * 0       26Sep23 FG      Initial Commit
 *
-*H*/
+*H***********************************************************************/
 
 #include <string.h>
 #include <stdbool.h>
