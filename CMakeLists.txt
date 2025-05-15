@@ -39,7 +39,7 @@ zephyr_include_directories(config)
 file(GLOB CLIB 
     "${CMAKE_CURRENT_LIST_DIR}/src/sm_clib-REL-1.0.2.9/sm_clib/*.c"
     "${CMAKE_CURRENT_LIST_DIR}/src/sm_clib-REL-1.0.2.9/sm_clib/*.h"
-    "${CMAKE_CURRENT_LIST_DIR}/src/sm_clib-REL-1.0.2.9/sm_clib/ports/zephyr/*.c"
-    "${CMAKE_CURRENT_LIST_DIR}/src/sm_clib-REL-1.0.2.9/sm_clib/ports/zephyr/*.h")
+    "${CMAKE_CURRENT_LIST_DIR}/src/sm_clib-REL-1.0.2.9/sm_clib/ports/aiot_zephyr/*.c"
+    "${CMAKE_CURRENT_LIST_DIR}/src/sm_clib-REL-1.0.2.9/sm_clib/ports/aiot_zephyr/*.h")
 
 target_sources(app PRIVATE ${CLIB})
